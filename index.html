@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+
+    <title>Lyric</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- <script src="/index.js"></script> -->
+    <script type="text/javascript">
+    	var apiKey = "c8b3b1c0f05958773f39d19134e7a7d8";
+    	var xhr = new XMLHttpRequest();
+    	xhr.open("GET", "https://api.musixmatch.com/ws/1.1/track.search?format=jsonp&callback=callback&q_lyrics=test&quorum_factor=1&apikey=c8b3b1c0f05958773f39d19134e7a7d8", false);
+    	xhr.send();
+
+    </script>
+
+    <style>
+        
+    </style>
+</head>
+<body style="background-color: black; text-align: center;">
+
+<div class="container">
+
+
+  <div class="middle-section">
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 marginB">
+        <form action="/search" method="post" class="w3-container w3-card-4 w3-purple w3-text-white w3-margin">
+        <h2 class="w3-center">Find Your Song</h2>
+
+
+        <div class="w3-row w3-section" >
+          <!-- <div class="w3-col" style="width:50px"><i class="w3-xxlarge glyphicon glyphicon-user"></i></div> -->
+            <div class="w3-rest">
+              <textarea class="w3-input w3-border" name="name" type="text" placeholder="What're the lyrics">
+              </textarea>
+            </div>
+        </div>
+
+
+        <button class="w3-button w3-block w3-section w3-white w3-ripple w3-padding ">LEGGO</button>
+    
+
+        </form>
+
+      </div>
+    </div><!-- End of Row-->
+
+
+    </div>
+  </div><!-- End of Container-->
+
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+</body>
+</html>
