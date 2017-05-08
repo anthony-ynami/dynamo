@@ -12,13 +12,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
    <!-- <script src="/index.js"></script> -->
-    <script type="text/javascript">
-    	var apiKey = "c8b3b1c0f05958773f39d19134e7a7d8";
-    	var xhr = new XMLHttpRequest();
-    	xhr.open("GET", "https://api.musixmatch.com/ws/1.1/track.search?format=jsonp&callback=callback&q_lyrics=test&quorum_factor=1&apikey=c8b3b1c0f05958773f39d19134e7a7d8", false);
-    	xhr.send();
-
-    </script>
+    <script src="app.js"></script>
 
     <style>
         
@@ -40,13 +34,13 @@
         <div class="w3-row w3-section" >
           <!-- <div class="w3-col" style="width:50px"><i class="w3-xxlarge glyphicon glyphicon-user"></i></div> -->
             <div class="w3-rest">
-              <textarea class="w3-input w3-border" name="name" type="text" placeholder="What're the lyrics">
+              <textarea class="w3-input w3-border w3-text-purple" name="lyr" type="text" placeholder="What're the lyrics">
               </textarea>
             </div>
         </div>
 
 
-        <button class="w3-button w3-block w3-section w3-white w3-ripple w3-padding ">LEGGO</button>
+        <button class="w3-button w3-block w3-section w3-white w3-text-purple w3-ripple w3-padding ">LEGGO</button>
     
 
         </form>
