@@ -1,0 +1,22 @@
+{
+  "name": "expressex",
+  "version": "1.0.0",
+  "description": "express test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/anthony-ynami/dynamo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthony-ynami/dynamo/issues"
+  },
+  "homepage": "https://github.com/anthony-ynami/dynamo#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

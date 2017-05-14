@@ -1,0 +1,348 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'nodeman',
+1 verbose cli   '-g',
+1 verbose cli   '--save' ]
+2 info using npm@4.1.1
+3 info using node@v6.9.4
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData nodeman
+8 silly fetchNamedPackageData nodeman
+9 silly mapToRegistry name nodeman
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'nodeman',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'nodeman',
+12 silly mapToRegistry   name: 'nodeman',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/nodeman
+14 verbose request uri https://registry.npmjs.org/nodeman
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 11:55:25 PM
+17 verbose request id d32f3c53d235eeab
+18 http request GET https://registry.npmjs.org/nodeman
+19 http 200 https://registry.npmjs.org/nodeman
+20 verbose headers { server: 'nginx/1.10.1',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'last-modified': 'Fri, 03 May 2013 01:55:33 GMT',
+20 verbose headers   etag: 'W/"51831915-14aff"',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'content-length': '5524',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Wed, 08 Feb 2017 04:55:28 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-jfk8136-JFK',
+20 verbose headers   'x-cache': 'MISS',
+20 verbose headers   'x-cache-hits': '0',
+20 verbose headers   'x-timer': 'S1486529727.996858,VS0,VE16',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 200,
+21 silly get   { server: 'nginx/1.10.1',
+21 silly get     'content-type': 'application/json',
+21 silly get     'last-modified': 'Fri, 03 May 2013 01:55:33 GMT',
+21 silly get     etag: 'W/"51831915-14aff"',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'content-length': '5524',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Wed, 08 Feb 2017 04:55:28 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-jfk8136-JFK',
+21 silly get     'x-cache': 'MISS',
+21 silly get     'x-cache-hits': '0',
+21 silly get     'x-timer': 'S1486529727.996858,VS0,VE16',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose get saving nodeman to /Users/Ali/.npm/registry.npmjs.org/nodeman/.cache.json
+23 verbose correctMkdir /Users/Ali/.npm correctMkdir not in flight; initializing
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule nodeman@1.1.2 checking installable status
+37 silly cache add args [ 'nodeman', null ]
+38 verbose cache add spec nodeman
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'nodeman',
+39 silly cache add   scope: null,
+39 silly cache add   escapedName: 'nodeman',
+39 silly cache add   name: 'nodeman',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed nodeman@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for nodeman
+42 info addNameTag [ 'nodeman', 'latest' ]
+43 silly mapToRegistry name nodeman
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry data Result {
+46 silly mapToRegistry   raw: 'nodeman',
+46 silly mapToRegistry   scope: null,
+46 silly mapToRegistry   escapedName: 'nodeman',
+46 silly mapToRegistry   name: 'nodeman',
+46 silly mapToRegistry   rawSpec: '',
+46 silly mapToRegistry   spec: 'latest',
+46 silly mapToRegistry   type: 'tag' }
+47 silly mapToRegistry uri https://registry.npmjs.org/nodeman
+48 verbose addNameTag registry:https://registry.npmjs.org/nodeman not in flight; fetching
+49 verbose get https://registry.npmjs.org/nodeman not expired, no request
+50 silly addNameTag next cb for nodeman with tag latest
+51 silly addNamed nodeman@1.1.2
+52 verbose addNamed "1.1.2" is a plain semver version for nodeman
+53 silly mapToRegistry name nodeman
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'nodeman',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   escapedName: 'nodeman',
+56 silly mapToRegistry   name: 'nodeman',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/nodeman
+58 verbose addRemoteTarball https://registry.npmjs.org/nodeman/-/nodeman-1.1.2.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/nodeman/-/nodeman-1.1.2.tgz',
+59 verbose addRemoteTarball   '78128508f7540dbbffbf7f1093222e09d58e1b64' ]
+60 info retry fetch attempt 1 at 11:55:28 PM
+61 info attempt registry request try #1 at 11:55:28 PM
+62 http fetch GET https://registry.npmjs.org/nodeman/-/nodeman-1.1.2.tgz
+63 http fetch 200 https://registry.npmjs.org/nodeman/-/nodeman-1.1.2.tgz
+64 silly fetchAndShaCheck shasum 78128508f7540dbbffbf7f1093222e09d58e1b64
+65 verbose addTmpTarball /var/folders/zg/t_rp1ly12j3_0rjtvl6423gr0000gn/T/npm-5960-95b54a54/registry.npmjs.org/nodeman/-/nodeman-1.1.2.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for nodeman@1.1.2
+67 verbose correctMkdir /Users/Ali/.npm correctMkdir not in flight; initializing
+68 silly cache afterAdd nodeman@1.1.2
+69 verbose afterAdd /Users/Ali/.npm/nodeman/1.1.2/package/package.json not in flight; writing
+70 verbose correctMkdir /Users/Ali/.npm correctMkdir not in flight; initializing
+71 verbose afterAdd /Users/Ali/.npm/nodeman/1.1.2/package/package.json written
+72 silly fetchNamedPackageData colors
+73 silly mapToRegistry name colors
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry data Result {
+76 silly mapToRegistry   raw: 'colors',
+76 silly mapToRegistry   scope: null,
+76 silly mapToRegistry   escapedName: 'colors',
+76 silly mapToRegistry   name: 'colors',
+76 silly mapToRegistry   rawSpec: '',
+76 silly mapToRegistry   spec: 'latest',
+76 silly mapToRegistry   type: 'tag' }
+77 silly mapToRegistry uri https://registry.npmjs.org/colors
+78 verbose request uri https://registry.npmjs.org/colors
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 11:55:40 PM
+81 verbose etag W/"58855533-5769"
+82 verbose lastModified Mon, 23 Jan 2017 00:58:27 GMT
+83 http request GET https://registry.npmjs.org/colors
+84 http 200 https://registry.npmjs.org/colors
+85 verbose headers { server: 'nginx/1.10.1',
+85 verbose headers   'content-type': 'application/json',
+85 verbose headers   'last-modified': 'Tue, 07 Feb 2017 11:40:50 GMT',
+85 verbose headers   etag: 'W/"5899b242-5799"',
+85 verbose headers   'content-encoding': 'gzip',
+85 verbose headers   'cache-control': 'max-age=300',
+85 verbose headers   'content-length': '5897',
+85 verbose headers   'accept-ranges': 'bytes',
+85 verbose headers   date: 'Wed, 08 Feb 2017 04:55:40 GMT',
+85 verbose headers   via: '1.1 varnish',
+85 verbose headers   age: '206',
+85 verbose headers   connection: 'keep-alive',
+85 verbose headers   'x-served-by': 'cache-jfk8136-JFK',
+85 verbose headers   'x-cache': 'HIT',
+85 verbose headers   'x-cache-hits': '1',
+85 verbose headers   'x-timer': 'S1486529740.177204,VS0,VE0',
+85 verbose headers   vary: 'Accept-Encoding' }
+86 silly get cb [ 200,
+86 silly get   { server: 'nginx/1.10.1',
+86 silly get     'content-type': 'application/json',
+86 silly get     'last-modified': 'Tue, 07 Feb 2017 11:40:50 GMT',
+86 silly get     etag: 'W/"5899b242-5799"',
+86 silly get     'content-encoding': 'gzip',
+86 silly get     'cache-control': 'max-age=300',
+86 silly get     'content-length': '5897',
+86 silly get     'accept-ranges': 'bytes',
+86 silly get     date: 'Wed, 08 Feb 2017 04:55:40 GMT',
+86 silly get     via: '1.1 varnish',
+86 silly get     age: '206',
+86 silly get     connection: 'keep-alive',
+86 silly get     'x-served-by': 'cache-jfk8136-JFK',
+86 silly get     'x-cache': 'HIT',
+86 silly get     'x-cache-hits': '1',
+86 silly get     'x-timer': 'S1486529740.177204,VS0,VE0',
+86 silly get     vary: 'Accept-Encoding' } ]
+87 verbose get saving colors to /Users/Ali/.npm/registry.npmjs.org/colors/.cache.json
+88 verbose correctMkdir /Users/Ali/.npm correctMkdir not in flight; initializing
+89 silly pickManifestFromRegistryMetadata spec * tag latest versions [ '0.3.0',
+89 silly pickManifestFromRegistryMetadata   '0.5.0',
+89 silly pickManifestFromRegistryMetadata   '0.5.1',
+89 silly pickManifestFromRegistryMetadata   '0.6.0',
+89 silly pickManifestFromRegistryMetadata   '0.6.0-1',
+89 silly pickManifestFromRegistryMetadata   '0.6.1',
+89 silly pickManifestFromRegistryMetadata   '0.6.2',
+89 silly pickManifestFromRegistryMetadata   '1.0.0',
+89 silly pickManifestFromRegistryMetadata   '1.0.1',
+89 silly pickManifestFromRegistryMetadata   '1.0.2',
+89 silly pickManifestFromRegistryMetadata   '1.0.3',
+89 silly pickManifestFromRegistryMetadata   '1.1.0',
+89 silly pickManifestFromRegistryMetadata   '1.1.1',
+89 silly pickManifestFromRegistryMetadata   '1.1.2' ]
+90 silly resolveWithNewModule colors@1.1.2 checking installable status
+91 silly cache add args [ 'colors@*', null ]
+92 verbose cache add spec colors@*
+93 silly cache add parsed spec Result {
+93 silly cache add   raw: 'colors@*',
+93 silly cache add   scope: null,
+93 silly cache add   escapedName: 'colors',
+93 silly cache add   name: 'colors',
+93 silly cache add   rawSpec: '*',
+93 silly cache add   spec: '*',
+93 silly cache add   type: 'range' }
+94 silly addNamed colors@*
+95 verbose addNamed "*" is a valid semver range for colors
+96 silly addNameRange { name: 'colors', range: '*', hasData: false }
+97 silly mapToRegistry name colors
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry data Result {
+100 silly mapToRegistry   raw: 'colors',
+100 silly mapToRegistry   scope: null,
+100 silly mapToRegistry   escapedName: 'colors',
+100 silly mapToRegistry   name: 'colors',
+100 silly mapToRegistry   rawSpec: '',
+100 silly mapToRegistry   spec: 'latest',
+100 silly mapToRegistry   type: 'tag' }
+101 silly mapToRegistry uri https://registry.npmjs.org/colors
+102 verbose addNameRange registry:https://registry.npmjs.org/colors not in flight; fetching
+103 verbose get https://registry.npmjs.org/colors not expired, no request
+104 silly addNameRange number 2 { name: 'colors', range: '*', hasData: true }
+105 silly addNameRange versions [ 'colors',
+105 silly addNameRange   [ '0.3.0',
+105 silly addNameRange     '0.5.0',
+105 silly addNameRange     '0.5.1',
+105 silly addNameRange     '0.6.0',
+105 silly addNameRange     '0.6.0-1',
+105 silly addNameRange     '0.6.1',
+105 silly addNameRange     '0.6.2',
+105 silly addNameRange     '1.0.0',
+105 silly addNameRange     '1.0.1',
+105 silly addNameRange     '1.0.2',
+105 silly addNameRange     '1.0.3',
+105 silly addNameRange     '1.1.0',
+105 silly addNameRange     '1.1.1',
+105 silly addNameRange     '1.1.2' ] ]
+106 silly pickManifestFromRegistryMetadata spec * tag latest versions [ '0.3.0',
+106 silly pickManifestFromRegistryMetadata   '0.5.0',
+106 silly pickManifestFromRegistryMetadata   '0.5.1',
+106 silly pickManifestFromRegistryMetadata   '0.6.0',
+106 silly pickManifestFromRegistryMetadata   '0.6.0-1',
+106 silly pickManifestFromRegistryMetadata   '0.6.1',
+106 silly pickManifestFromRegistryMetadata   '0.6.2',
+106 silly pickManifestFromRegistryMetadata   '1.0.0',
+106 silly pickManifestFromRegistryMetadata   '1.0.1',
+106 silly pickManifestFromRegistryMetadata   '1.0.2',
+106 silly pickManifestFromRegistryMetadata   '1.0.3',
+106 silly pickManifestFromRegistryMetadata   '1.1.0',
+106 silly pickManifestFromRegistryMetadata   '1.1.1',
+106 silly pickManifestFromRegistryMetadata   '1.1.2' ]
+107 silly addNamed colors@latest
+108 verbose addNamed "latest" is being treated as a dist-tag for colors
+109 info addNameTag [ 'colors', 'latest' ]
+110 silly mapToRegistry name colors
+111 silly mapToRegistry using default registry
+112 silly mapToRegistry registry https://registry.npmjs.org/
+113 silly mapToRegistry data Result {
+113 silly mapToRegistry   raw: 'colors',
+113 silly mapToRegistry   scope: null,
+113 silly mapToRegistry   escapedName: 'colors',
+113 silly mapToRegistry   name: 'colors',
+113 silly mapToRegistry   rawSpec: '',
+113 silly mapToRegistry   spec: 'latest',
+113 silly mapToRegistry   type: 'tag' }
+114 silly mapToRegistry uri https://registry.npmjs.org/colors
+115 verbose addNameTag registry:https://registry.npmjs.org/colors already in flight; waiting
+116 silly addNameTag next cb for colors with tag latest
+117 silly addNamed colors@1.1.2
+118 verbose addNamed "1.1.2" is a plain semver version for colors
+119 silly mapToRegistry name colors
+120 silly mapToRegistry using default registry
+121 silly mapToRegistry registry https://registry.npmjs.org/
+122 silly mapToRegistry data Result {
+122 silly mapToRegistry   raw: 'colors',
+122 silly mapToRegistry   scope: null,
+122 silly mapToRegistry   escapedName: 'colors',
+122 silly mapToRegistry   name: 'colors',
+122 silly mapToRegistry   rawSpec: '',
+122 silly mapToRegistry   spec: 'latest',
+122 silly mapToRegistry   type: 'tag' }
+123 silly mapToRegistry uri https://registry.npmjs.org/colors
+124 verbose addRemoteTarball https://registry.npmjs.org/colors/-/colors-1.1.2.tgz not in flight; adding
+125 verbose addRemoteTarball [ 'https://registry.npmjs.org/colors/-/colors-1.1.2.tgz',
+125 verbose addRemoteTarball   '168a4701756b6a7f51a12ce0c97bfa28c084ed63' ]
+126 info retry fetch attempt 1 at 11:55:40 PM
+127 info attempt registry request try #1 at 11:55:40 PM
+128 http fetch GET https://registry.npmjs.org/colors/-/colors-1.1.2.tgz
+129 http fetch 200 https://registry.npmjs.org/colors/-/colors-1.1.2.tgz
+130 silly fetchAndShaCheck shasum 168a4701756b6a7f51a12ce0c97bfa28c084ed63
+131 verbose addTmpTarball /var/folders/zg/t_rp1ly12j3_0rjtvl6423gr0000gn/T/npm-5960-95b54a54/registry.npmjs.org/colors/-/colors-1.1.2.tgz not in flight; adding
+132 verbose addTmpTarball already have metadata; skipping unpack for colors@1.1.2
+133 verbose correctMkdir /Users/Ali/.npm correctMkdir not in flight; initializing
+134 silly cache afterAdd colors@1.1.2
+135 verbose afterAdd /Users/Ali/.npm/colors/1.1.2/package/package.json not in flight; writing
+136 verbose correctMkdir /Users/Ali/.npm correctMkdir not in flight; initializing
+137 verbose afterAdd /Users/Ali/.npm/colors/1.1.2/package/package.json written
+138 silly loadAllDepsIntoIdealTree Finishing
+139 silly loadIdealTree Finishing
+140 silly currentTree lib
+141 silly idealTree lib
+141 silly idealTree └─┬ nodeman@1.1.2
+141 silly idealTree   └── colors@1.1.2
+142 silly generateActionsToTake Starting
+143 silly install generateActionsToTake
+144 warn checkPermissions Missing write access to /usr/local/lib/node_modules
+145 silly rollbackFailedOptional Starting
+146 silly rollbackFailedOptional Finishing
+147 silly runTopLevelLifecycles Finishing
+148 silly install printInstalled
+149 verbose stack Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+149 verbose stack     at Error (native)
+150 verbose cwd /Users/Ali/Desktop/Classes/Spring2017/DynamicWeb/Week3/hw4
+151 error Darwin 15.5.0
+152 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "nodeman" "-g" "--save"
+153 error node v6.9.4
+154 error npm  v4.1.1
+155 error path /usr/local/lib/node_modules
+156 error code EACCES
+157 error errno -13
+158 error syscall access
+159 error Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+159 error     at Error (native)
+159 error  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+159 error     at Error (native)
+159 error   errno: -13,
+159 error   code: 'EACCES',
+159 error   syscall: 'access',
+159 error   path: '/usr/local/lib/node_modules' }
+160 error Please try running this command again as root/Administrator.
+161 verbose exit [ -13, true ]

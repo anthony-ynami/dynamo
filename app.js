@@ -1,40 +1,25 @@
 
 var express = require('express');
-var handlebars = require('express-handlebars')
-
-var app = express();
-
-function processData(data) {
- // taking care of data
-		}
-
-function handler() {
-  if(this.status == 200 &&
-   	 this.responseXML != null &&
-    this.responseXML.getElementById('test').textContent) {
-    // success!
-    processData(this.responseXML.getElementById('test').textContent);
-} else {
-    // something went wrong
-  }
-}
-
-var client = new XMLHttpRequest();
-client.onload = handler;
-apikey="c8b3b1c0f05958773f39d19134e7a7d8";
-client.open("GET", "https://api.musixmatch.com/ws/1.1/");
-client.send();
+var handlebars = require('express-handlebars');
+const path = require('path');
+var MusixmatchApi = require('../../build/javascript-client/src/index')
+var defaultClient = MusixmatchApi.ApiClient.instance;
+var key = defaultClient.authentications['key'];
 
 
-app.engine('handlebars', handlebars({defaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
-
-app.use('/static', express.static('public'))
-
-app.get('/', function(req, res) {
-  res.render('home');
-});
-
-app.get('/users/:username', function(req, res) {
-  res.render('user', {name: req.params.username});
-});
+key.apiKey = "c8b3b1c0f05958773f39d19134e7a7d8"; // {String} 
+var opts = {
+    format: "json", // {String} output format: json, jsonp, xml.
+};
+trackId= 15445219; // {number}
+(new MusixmatchApi.TrackApi()).trackGetGet(trackId, opts, (error, data, response) => {
+    if (error) {
+        console.error(error);
+    } else if(response.text) {
+        data = JSON.parse(response.text);
+        console.log('Returned data:\n%s' ,JSON.stringify(data,null,2));
+    }
+    else {
+        throw new Error('bad response')   
+    }
+} );
