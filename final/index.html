@@ -1,61 +1,143 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width">
 
-    <title>Lyric</title>
+  <title>wut do</title>
+  <meta charset="UTF-8">
+  <title>Lyrics</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<script src="require.js"></script>
+  <style>
+    @import  url(//fonts.googleapis.com/css?family=Lato:400,700);
 
-   <!-- <script src="/index.js"></script> -->
-    <script src="app.js"></script>
+    body {
+      margin:0;
+      font-family:'Lato', sans-serif;
+      color: #444;
+    }
 
-    <style>
-        
-    </style>
+    a, a:visited {
+      color: inherit;
+    }
+
+    h1 {
+      text-align:center;
+      font-size: 32px;
+      margin: 16px 0 0 0;
+      font-weight: 700;
+    }
+
+    h1 a {
+      text-decoration:none;
+    }
+
+    header, main, footer {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    #search, footer {
+      text-align: center;
+    }
+    footer {
+      margin-top: 100px;
+    }
+
+    p.tagline {
+      text-align:center;
+      margin: 30px 0;
+    }
+
+    #search input {
+      padding: 5px 10px;
+      height: 40px;
+      margin: 10px 0;
+    }
+
+    #search input[type=text] {
+      font-size: 2em;
+      border: 1px solid #ccc;
+      width: 75%;
+      min-width: 300px;
+      max-width: 600px;
+    }
+    #search input[type=submit] {
+      border: none;
+      font-size: 1em;
+      background: #eee;
+    }
+
+    #lyrics, #playlist {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #lyrics {
+      text-align:left;
+      font-weight: 400;
+      font-size: 1.3em;
+      margin-bottom: 50px;
+    }
+
+  </style>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+<!--   <script>
+    $(document).ready(function(){
+      var lyrics;
+      $("#submit").click(function(){
+        lyrics=$("#lyrics").val();
+        $.post("http://localhost:3000/?",{startID=lyrics}, function(data){
+          if(data==='done')
+          {
+            alert("FOUND");
+          }
+        });
+      });
+    });
+  </script> -->
 </head>
-<body style="background-color: black; text-align: center;">
-
-<div class="container">
+<body>
 
 
-  <div class="middle-section">
+  <header>
+    <h1><a href="/">wut dat song</a></h1>
+  </header>
 
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 marginB">
-        <form action="/search" method="post" class="w3-container w3-card-4 w3-purple w3-text-white w3-margin">
-        <h2 class="w3-center">Find Your Song</h2>
+  <main>
 
+    <div id="home">
 
-        <div class="w3-row w3-section" >
-          <!-- <div class="w3-col" style="width:50px"><i class="w3-xxlarge glyphicon glyphicon-user"></i></div> -->
-            <div class="w3-rest">
-              <textarea class="w3-input w3-border w3-text-purple" name="lyr" type="text" placeholder="What're the lyrics">
-              </textarea>
-            </div>
-        </div>
-
-
-        <button class="w3-button w3-block w3-section w3-white w3-text-purple w3-ripple w3-padding ">LEGGO</button>
-    
-
-        </form>
-
+      <p class="tagline">Find The Song</p>
+      <div class="triangle">
       </div>
-    </div><!-- End of Row-->
+      <div id="search">
+        <form>
+          <div>
+            <input id="lyrics" type="text" name="q_lyrics" placeholder="What're The Lyrics" value="" >
+            <button onclick="getSong()">Gib me song!</button>
+            <button id="ghost" onclick="getSongNow()">Ghost</button>  
+          </div>
+        </form>
+      </div>
 
+     </div>
 
-    </div>
-  </div><!-- End of Container-->
+  <div id ="response">
+  </div>
 
-<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</main>
 
+<footer>
+  by <a href="http://ynami.xyz">Anthony Ynami</a>
+  with the help of <a href="https://developer.musixmatch.com/" target="_blank">musixmatch</a>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
